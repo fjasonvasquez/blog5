@@ -12,7 +12,7 @@ RSpec.feature "Adding reviews to Articles" do
 
 		visit "/"
 
-		click_link @article.titel
+		click_link @article.title
 		fill_in "New Comment", with: "An amazing article"
 		click_button "Add Comment"
 
