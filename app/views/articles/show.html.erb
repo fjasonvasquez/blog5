@@ -32,7 +32,7 @@
 					<div class='panel-body'>
 						<ul>
 							<% @comment.errors.full_messages.each do |msg| %>
-								<li><%= msg %></li
+								<li><%= msg %></li>
 							<% end %>
 						</ul>
 					</div>
@@ -67,7 +67,7 @@
 			<div id="messages">
 				<% persisted_comments(@comments).each do |comment| %>
 					<div class='comment-body'>
-						<% comment.body %>
+						<%= comment.body %>
 					</div>
 
 					<div class='comment-time'>
